@@ -75,6 +75,16 @@ public class PracticeSpringApplication {
         ICar audi5 = new A5(audi, "A5");
         audi5.showPrice();
         */
+
+        /* 옵저버
+        Button button = new Button("버튼");
+        button.addListener(System.out::println);
+
+        button.click("메세지 전달 1");
+        button.click("메세지 전달 2");
+        button.click("메세지 전달 3");
+        button.click("메세지 전달 4");
+        */
     }
 
     public static void connect(Electronic110V electronic110V) {
