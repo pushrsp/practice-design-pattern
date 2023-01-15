@@ -85,6 +85,30 @@ public class PracticeSpringApplication {
         button.click("메세지 전달 3");
         button.click("메세지 전달 4");
         */
+
+        /* 파사드
+        Ftp ftpClient = new Ftp("www.foo.co.kr", 22, "/home/etc");
+        ftpClient.connect();
+        ftpClient.moveDirectory();
+
+        Writer writer = new Writer("text.tmp");
+        writer.fineConnect();
+        writer.write();
+
+        Reader reader = new Reader("text.tmp");
+        reader.fileConnect();
+        reader.fileRead();
+
+        reader.findDisconnect();
+        writer.fileDisconnect();
+        ftpClient.disconnect();
+
+        SftpClient sftpClient = new SftpClient("www.foo.co.kr", 22, "/home/etc", "txt.tmp");
+        sftpClient.connect();
+        sftpClient.read();
+        sftpClient.write();
+        sftpClient.disconnect();
+        */
     }
 
     public static void connect(Electronic110V electronic110V) {
