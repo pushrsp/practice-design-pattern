@@ -1,13 +1,21 @@
 package com.example.practicespring;
 
-import org.springframework.boot.SpringApplication;
+import com.example.practicespring.singleton.AClazz;
+import com.example.practicespring.singleton.BClazz;
+import com.example.practicespring.singleton.SocketClient;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class PracticeSpringApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(PracticeSpringApplication.class, args);
+        AClazz aClazz = new AClazz();
+        BClazz bClazz = new BClazz();
+
+        SocketClient aClient = aClazz.getSocketClient();
+        SocketClient bClient = bClazz.getSocketClient();
+        
+//        SpringApplication.run(PracticeSpringApplication.class, args);
     }
 
 }
